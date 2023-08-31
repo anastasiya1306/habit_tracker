@@ -1,9 +1,7 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import requests
 from celery import shared_task
-import telebot
-from config import settings
 from config.settings import TELEGRAM_TOKEN
 from habit_tracker.models import Habit
 
