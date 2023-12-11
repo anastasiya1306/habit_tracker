@@ -12,6 +12,6 @@ RUN pip install -r requirements.txt
 
 # Копируем код приложения в контейнер
 COPY . .
-
+COPY .env.docker .env
 # Команда для запуска приложения при старте контейнера
 CMD ["python", "manage.py", "runserver"]
